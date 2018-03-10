@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mana.workshop.Activities.NewsDetails"
+    android:background="#E3EAEE">
+    <include
+        layout="@layout/custom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/details_bar" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_bar"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/white"
+            android:id="@+id/relative_views"
+            >
+
+            <ImageView
+                android:id="@+id/news_details_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/placeholder"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/news_details_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/news_details_image"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="DATE HOLDER"
+                android:textStyle="bold"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/news_details_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/news_details_date"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="16dp"
+                android:text="TEST TEST"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/news_details_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/news_details_title"
+                android:layout_below="@+id/news_details_title"
+                android:text="TEST" />
+
+            <TextView
+                android:id="@+id/news_details_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/news_details_author"
+                android:layout_below="@+id/news_details_author"
+                android:layout_marginTop="23dp"
+                android:layout_marginBottom="30dp"
+                android:text="DESCRIPTION" />
+
+        </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Open Website"
+        android:textColor="@android:color/white"
+
+
+        android:layout_margin="18dp"
+        android:layout_below="@+id/relative_views"
+        android:onClick="openUrl" />
+
+</RelativeLayout>
+</ScrollView>

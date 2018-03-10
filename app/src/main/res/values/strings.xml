@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Link Development</string>
+    <string name="explore">Explore</string>
+    <string name="chat">Live Chat</string>
+    <string name="gallery">Gallery</string>
+    <string name="wish">Wish List</string>
+    <string name="magazines">E-Magazines</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="search">Search</string>
+
+</resources>
+
